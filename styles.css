@@ -1,0 +1,363 @@
+/* body{
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);;
+} */
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+html {
+    font-size: 62.5%;
+    font-family: "inter";
+}
+
+#nav a{
+    color:#57595af5;
+    font-weight:bold;
+    font-size:1.3rem;
+    font-family:"inter";
+    margin: 25px 50px;
+    
+}
+
+#nav #text-talk {
+    color:#57c6e1;
+}
+#header-container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+#header-container .title-container{
+ padding:20px;
+ margin-top: 100px;
+ margin-left:50px;
+ margin-bottom: 30px;
+ 
+
+}
+
+.title-container h2 {
+    padding-top: 15px;
+    font-family: "Inter";
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #57595af5;
+}
+
+.title-container h4 {
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom:20px;
+}
+.button-container__header #button-portfolio a {
+    text-decoration: none;
+    color:#57c6e1;
+    
+
+
+}
+.button-container__header #button-portfolio  {
+    background: white;
+    color:#57c6e1;
+    border: 1px solid #50adc4;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "inter";
+    box-shadow:0px 5px 15px 0px rgba(77, 74, 74, 0.91);
+    padding:.375rem .75rem;
+    width:60%;
+    
+
+
+}
+
+
+.button-container__header #button-portfolio:hover {
+    background-color: #846485;
+    border:#846485;
+    color: white;
+    font-weight:bold;
+}
+ #button-talk {
+     
+    background-color: #846485;
+    
+    margin:25px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    font-family: "inter";
+    border-radius: 6px;
+    box-shadow:0px 5px 15px 0px rgba(77, 74, 74, 0.91);
+    width:60%;
+    
+    
+}
+
+#button-talk a {
+     
+    text-decoration: none;
+    color:white;
+    
+    
+}
+/* media query para arreglar boton (se desacomodan cuando tengo pantalla small) */
+/* @media only screen and (max-width:320px) 
+
+{ #button-talk,.button-container__header  #button-portfolio {
+    width:80%;
+  }
+} */
+
+#button-talk:hover {
+    background:#a487a5;
+    color:#57c6e1;
+    font-weight:bold;
+}
+
+.button-container__header{
+    
+    margin-top:60px;
+     
+}
+
+.photo-container  {
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+    background-color: white;
+    clip-path: circle(45%);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left:auto;
+    margin-right:auto;
+    }
+
+.photo-container:hover  {
+    -webkit-transform:scale(0.9);transform:scale(0.9); 
+
+}
+
+img {
+    padding:15px;
+    object-fit:cover;
+    width: 270px;
+    
+}
+
+
+#section-skills {
+    margin:40px;
+    margin-top: 100px;
+    left:0;
+    right:0;
+    
+    
+    
+}
+
+/* #section-skills #container-main {
+    /* background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    padding:50px; */ */
+    
+
+
+
+
+
+    /*     otro fondo
+    background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
+   
+    
+
+
+#section-skills #container-main p, #section-portfolio{
+    
+    font-family: "inter";
+    font-weight:500;
+    padding-left:40px;
+    font-size: 1.6rem;
+    align-items: center;
+    
+}
+
+#section-skills .description {
+    font-size:1.6rem;
+}
+
+ #section-portfolio{
+    
+    font-family: "inter";
+    font-weight:500;
+    
+    font-size: 1.6rem;
+    align-items: center;
+    margin-right:10px;
+    
+}
+
+#container-main .icon-container img {
+    width:200px;
+    height:200px;
+    margin-left:20px;
+    padding:30px;
+}
+
+.icon-container{
+    display:flex;
+    justify-content:center;
+}
+
+#section-portfolio {
+    background-color: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    width:100%;
+    height:100%;
+    position:relative;
+    align-items: center;
+}
+    #section-portfolio .cards-container{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #section-portfolio .title-portfolio
+    {
+        color:white;
+        font-weight: bold;
+        margin-top: 20px;
+    }
+  .container-portfolio {
+    
+     background-color: white;
+     margin-top:50px;
+     margin-bottom: 50px;
+     width:80%;
+     border-radius:25px ;
+     padding:30px;
+ }
+
+ .container-portfolio h3{
+     padding-top:20px;
+     margin-bottom:30px;
+ }
+
+ .container-portfolio p{
+    padding-top:20px;
+    margin-bottom:30px;
+    color:#57595af5;
+}
+
+
+ .container-portfolio .img-container__portfolio img{
+     align-items: center;
+     max-height: fit-content;
+     height:250px;
+     width:100%;
+     border-radius: 20px;
+     border: 1px solid rgb(160, 159, 159);
+    
+ }
+
+ .container-portfolio .img-container__portfolio {
+     margin:auto;
+ }
+
+ .container-portfolio #button-talk{
+     margin-left: 0;
+     
+ }
+
+ 
+/* @media only screen and (max-width:320px) 
+
+
+
+
+{ #button-talk,.button-container__header  #button-portfolio {
+    width:80%;
+  }
+} */
+/* media query para arreglar content de imagen portfolio porque se alinea pero en small se descentra (se desacomoda small) */
+    @media only screen and (max-width:767px)
+            { #section-portfolio .portfolio-card {
+               margin-left: 0;
+            }
+            }
+
+/* media para subirle letra a footer en tammaño big NO ME FUNCIONO */
+    @media only screen and (max-width:789px)
+            { .footer-section p{
+               font-size:1.6rem;
+            }
+            }
+
+ .footer-section{
+     width:100%;
+     
+     display:flex;
+     justify-content: center;
+     
+     
+     
+     
+ }
+ .footer-section h2{
+     margin-top:30px;
+    margin-bottom:90px;
+    font-family: "inter";
+    font-weight: bold;
+    color:#57595af5;
+    
+    
+    font-size: 2.3rem;
+    align-items: center;
+}
+ 
+ .footer-section p {
+    font-family: "inter";
+    font-weight: 500;
+   
+    font-size: 1.3rem;
+    align-items: center;
+}
+ #container-footer .icono-footer  img{
+     width:70px;
+     height:70px;
+     object-fit: cover;
+ }
+
+.button-container__footer #button-contact a{
+    text-decoration: none;
+    color:white ;
+}
+.button-container__footer #button-contact {
+    background-color: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); 
+    color:white;
+    border: 1px solid #50adc4;
+    border-radius: 6px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    font-family: "inter";
+    box-shadow:0px 5px 15px 0px rgba(77, 74, 74, 0.91);
+    padding:.375rem .75rem;
+    width:40%;
+    margin-top:50px;
+    
+    margin-bottom:50px;
+}
+
+.button-container__footer #button-contact:hover {
+    background-color: #846485;
+    
+}
